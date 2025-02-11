@@ -1,17 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
-body{
-    background-color: rgb(247, 190, 255);
-    font-family: "Yellowtail", serif;
-    font-size: 45px;
-    font-style: italic
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+  body{
+    background-color: #290000;
+    font-size: 35px;
+    font-family: "Henny Penny", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 p{
-    color: rgb(255, 0, 200);
-    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     text-align: center;
-   
+}
+
+#opening{
+    padding: 50px
+}
+
+.hr{
+    border-style: double
 }
 h1{
     text-align: center;
@@ -20,23 +27,22 @@ h1{
 
 .navbar ul{
     list-style-type: none;
-
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
 
 .navbar a{
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
+    background-color: #120000;
     text-decoration: none;
+    color: whitesmoke;
     padding: 15px;
     display: block;
     text-align: center;
 }
 
 .navbar a:hover{
-    background-color:rgb(255, 0, 200);
+    background-color: #660000;
     
 }
 
