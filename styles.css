@@ -1,23 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
   body{
-    background-color:  #FFF2D8;
-    font-size: 35px;
-    font-family: "Henny Penny", serif;
+    background-color:  #ffeef7;
+    font-size: 65px;
+    font-family: "Dancing Script", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 p{
-    color: #fca2cf;
+    color: #9C1212;
     font-size: 30px;
     text-align: center;
 }
 
+#opening{
+    font-size: 50px;
+    justify-items: center;
+}
+
 
 #meya{
-margin: 40px;
-width: auto;
-height: auto;
+justify-content: space-around;
+display: block;
+margin: auto;
+height: 700px;
+border: 5px dotted #fca2cf;
+border-radius: 50xpx;
 
 }
 
@@ -39,32 +47,21 @@ illumi{
     height: auto;
 }
 
-#opening{
-    padding: 50px
-}
-
-.hr{
-    border-style: double
-}
-h1{
-    text-align: center;
-}
-
 
 .navbar {
-    background-color: 	#fccdd3; 
-    color: #F0F8FF;  
+    background-color:#ffffff; 
+    color: #fdd2e8;  
 }
 
 
 .navbar a {
-    color: #F0F8FF;  
+    color: #ffb7dd;  
     text-decoration: none;
 }
 
 
 .navbar a:hover {
-    color: #2E8B57;  
+    color: #ff7878;  
 }
 
 
@@ -77,6 +74,13 @@ h1{
     color: #7FFFD4;  
 }
 
-li {
-    display: inline;
+.navbar li {
+    display: inline-block;
+    padding: 16px;
   }
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
