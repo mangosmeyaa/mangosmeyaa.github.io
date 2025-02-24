@@ -50,7 +50,9 @@ illumi{
 
 .navbar {
     background-color:#ffffff; 
-    color: #fdd2e8;  
+    color: #fdd2e8;
+    position: sticky;
+  top: 0;
 }
 
 
@@ -84,3 +86,12 @@ illumi{
     align-items: center;
     justify-content: space-around;
 }
+
+#first{
+    color:#9C1212;
+}
+
+#freakbob{
+
+}
+
