@@ -13,11 +13,6 @@ p{
     text-align: center;
 }
 
-#opening{
-    font-size: 50px;
-    justify-items: center;
-}
-
 input{
     background-color: #ffddee;
     border-radius: 10px;
@@ -31,11 +26,10 @@ textarea{
 #meya{
 justify-content: space-around;
 display: block;
-margin: auto;
-height: 700px;
+height: 400px;
 border: 5px dotted #fca2cf;
 border-radius: 50xpx;
-
+margin-right: 32px;
 }
 
 #hxh{
@@ -100,7 +94,8 @@ illumi{
     color:#9C1212;
 }
 
-#freakbob{
 
+#opening{
+    font-size: 50px;
+    justify-items: center;
 }
-
