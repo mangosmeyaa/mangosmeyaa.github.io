@@ -16,6 +16,7 @@ p{
 input{
     background-color: #ffddee;
     border-radius: 10px;
+    
 }
 
 textarea{
@@ -48,6 +49,7 @@ illumi{
     margin: 40px;
     width: auto;
     height: auto;
+    max-width: auto;
 }
 
 
