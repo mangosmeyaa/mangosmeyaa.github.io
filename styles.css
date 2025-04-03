@@ -14,7 +14,7 @@
 }
 
 .h1 {
-   font-size:70px;
+   font-size:40px;
    background-color: #fff5b7;
    color:  #ff66b2;
     padding: 20px;
@@ -27,6 +27,36 @@ p{
     font-size: 30px;
     text-align: center;
 }
+
+.img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #fff5b7;
+    border-radius: 50px;
+    border-color: #fff5b7;
+    border-style: dashed;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+}
+
+.right-side{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
 
 #opening{
     font-size: 50px;
@@ -76,24 +106,12 @@ border-radius: 50xpx;
 margin-right: 32px;
 }
 
-#hxh{
-    margin: 40px;
-    width: auto;
-    height: auto;
-}
-
 milim{
     margin: 40px;
     width: auto;
     height: auto;
 }
 
-illumi{
-    margin: 40px;
-    width: auto;
-    height: auto;
-    max-width: auto;
-}
 
 .navbar{
     position: sticky;
@@ -140,10 +158,6 @@ illumi{
     align-items: center;
     justify-content: space-around;
 }
-
-
-
-
 
 input:focus {
     background-color: lightblue;
