@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
   body{
-    background-color:  #ffeef7;
+    background-color:  #1F1300;
     font-size: 30px;
     font-family: "Dancing Script", serif;
     font-weight: 400;
@@ -15,9 +15,11 @@
 
 .h1 {
    font-size:70px;
-   background-color: #fff5b7;
+   background-color: #FFC15E;
    color:  #ff66b2;
     padding: 20px;
+    border-color: pink;
+    bp
 }
 
 p{
@@ -33,9 +35,9 @@ p{
     justify-items: center;
 }
 .animated-text {
-    color: #ff66b2;
+    color: #FFC15E;
     font-size: 28px;
-    background-color: #fff5b7;
+    background-color: #CC5803;
     border-radius: 15px;
     text-align: center;
     font-weight: bold;
@@ -67,32 +69,13 @@ textarea{
     border-radius: 10px;
 }
 
-#meya{
+#Meya{
 justify-content: space-around;
 display: block;
 height: 400px;
 border: 5px dotted #fca2cf;
 border-radius: 50xpx;
 margin-right: 32px;
-}
-
-#hxh{
-    margin: 40px;
-    width: auto;
-    height: auto;
-}
-
-milim{
-    margin: 40px;
-    width: auto;
-    height: auto;
-}
-
-illumi{
-    margin: 40px;
-    width: auto;
-    height: auto;
-    max-width: auto;
 }
 
 .navbar{
