@@ -10,6 +10,77 @@
     <meta name="description" content="Personal and professional website created by a STEAM Scholar, who just so happens to be named Meya Middleton. This website is used to get to know me more and learn more about what I can develop in my creative projects.">
     <meta name="keywords" content="CSS, Javascript, Meya Middleton, HTML, pink, dark red, black, STEAM, Brooklyn">
     <link rel="shortcut icon" href="461249fd775ac6b8b8975d7af643114f.jpg" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.card {
+            background-color: var(--color-bg-card);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 4px dotted orange;
+            border-width: 15px;
+        }
+
+      .rotate-image{
+        transform: rotate(298deg);
+      }
+
+      h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 10px;
+            color: var(--color-accent-orange);
+            text-shadow: 0 0 10px rgba(255, 133, 0, 0.5); /* Subtle glow */
+      }
+     
+
+        .project-link:hover {
+            background-color: var(--color-bg-deep); /* Inverse color on hover */
+            color: var(--color-accent-orange);
+            border-color: var(--color-accent-orange);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 var(--color-bg-card);
+        }
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background-color: var(--color-accent-orange);
+            color: var(--color-bg-deep); /* Text color set to deep purple */
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 8px;
+            border: 2px solid var(--color-accent-orange);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 0 var(--color-bg-deep); /* 3D effect */
+        }
+
+        .project-link:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 var(--color-bg-deep);
+        }
+
+        card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: orange; /* <--- This is the rule */
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--color-bg-deep);
+            padding-bottom: 10px;
+        }
+
+
+       
+
+      </style>
 </head>
  
   <body>
@@ -18,7 +89,62 @@
         <a href="portfolioss.html">Portfolio</a>
         <a href="contact_me.html">Contact</a>
       </nav>
-      
+      <div class="container">
+        <header>
+            <h1>My Portfolio of Achievements</h1>
+            <br>
+            <br>
+            <br>
+            <p class="subtitle">Showcasing my technical skills, professional certifications, and academic excellence.</p>
+        </header>
 
-      </body>
-      </html>
+        <section class="achievement-grid">
+            
+            <!-- Achievement 1: HTML & CSS Certification -->
+            <div class="card">
+                <h3>HTML & CSS Certification</h3>
+                <p>
+                  <img class="rotate-image" img src= "HTML_css.jpeg" alt="html" width="400">
+                    Successfully completed the certification requirements to become an Information Technology Specialist in HTML and CSS. This verifies core front-end web development skills.
+                </p>
+            </div>
+           <br>
+           <br>
+           <br>
+            <!-- Achievement 2: Python Project Link (Calculator) -->
+            <div class="card">
+                <h3>Python Programming Project</h3>
+                <p>
+                    A foundational calculator built in Python as part of Unit 01 coursework. This shows my logic in operations in Python.</p>
+                <!-- This is the requested link, styled to pop -->
+                <a href="https://github.com/mangosmeyaa/unit-01-python/blob/main/05_calculator.py" target="_blank" class="project-link">
+                    <span class="link-icon">&#128187;</span> <!-- Computer Icon -->
+                    View Python Calculator Code
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- Achievement 3: National Honor Society -->
+            <div class="card">
+                <h3>National Honor Society Member</h3>
+                <p>
+                  <img src= "national_.jpg" alt="bannaa" width="400">
+                    Selected as a member of the George Westinghouse High School Chapter of the NHS, based on demonstrated excellence in Scholarship, Service, Leadership, and Character.
+                </p>
+            </div>
+<br>
+<br>
+<br>
+            <!-- Achievement 4: Varsity Track & Field -->
+            <div class="card">
+                <h3>Varsity Athletic Participation</h3>
+                <p>
+                  <img class="rotate-image" src="Track_.jpeg" alt="track" width="400">
+                    Certificate of Athletic Participation for Varsity Indoor Track & Field. Demonstrates commitment to teamwork, discipline, and physical fitness.
+                </p>
+            </div>
+        </section>
+    </div>
+    </body>
+    </html>

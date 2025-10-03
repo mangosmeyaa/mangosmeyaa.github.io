@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Received</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+        /* Color Variables based on your scheme */
+        :root {
+            --color-bg-deep: #240046;
+            --color-bg-card: #3C096C;
+            --color-accent-orange: #FF8500;
+            --color-accent-hover: #FF9100;
+            --color-text-light: #F3F4F6;
+            --color-text-dark: #240046;
+        }
+
+        /* Global Styling */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--color-bg-deep);
+            color: var(--color-text-light);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Success Box Styling - Matches the main page's aesthetic */
+        .success-box {
+            max-width: 500px;
+            width: 100%;
+            background-color: var(--color-bg-card);
+            border-radius: 16px;
+            /* Glowing orange shadow */
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5), 0 0 10px var(--color-accent-orange);
+            padding: 50px 30px;
+        }
+
+        .success-icon {
+            color: var(--color-accent-orange);
+            font-size: 4rem; /* Large Checkmark */
+            line-height: 1;
+            display: block;
+            margin: 0 auto 25px;
+            animation: pulse 1.5s infinite; 
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: var(--color-accent-orange);
+        }
+
+        p {
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        /* Back Button Styling - Matches the main page's button style */
+        .back-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--color-accent-orange);
+            color: var(--color-text-dark);
+            font-weight: 800;
+            font-size: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 0 var(--color-bg-deep);
+        }
+
+        .back-button:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 0 var(--color-bg-deep);
+        }
+        
+        .back-button:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 var(--color-bg-deep);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-box">
+        
+        <span class="success-icon" aria-hidden="true">&#10004;</span> <!-- Heavy Check Mark -->
+
+        <h1>Message Received</h1>
+        <p>
+            Your inquiry has been successfully sent to Meya. She appreciates you reaching out and will respond to your message as quickly as possible!
+        </p>
+
+        <a href="contact_me.html" class="back-button">
+            Return to Contact Page
+        </a>
+    </div>
+
+</body>
+</html>

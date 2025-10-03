@@ -10,6 +10,213 @@
     <meta name="description" content="Personal and professional website created by a STEAM Scholar, who just so happens to be named Meya Middleton. This website is used to get to know me more and learn more about what I can develop in my creative projects.">
     <meta name="keywords" content="CSS, Javascript, Meya Middleton, HTML, pink, dark red, black, STEAM, Brooklyn">
     <link rel="shortcut icon" href="461249fd775ac6b8b8975d7af643114f.jpg" type="image/x-icon">
+    <style>
+        /* CSS Reset and Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        /* Color Variables based on your scheme */
+        :root {
+            --color-bg-deep: #240046;     /* Deep Background Purple */
+            --color-bg-card: #3C096C;     /* Card Background Purple */
+            --color-form-field: #1C003B;  /* Input/Link Background Purple */
+            --color-accent-orange: #FF8500; /* Primary Accent */
+            --color-accent-hover: #FF9100;  /* Button Hover */
+            --color-text-light: #F3F4F6;
+            --color-text-dark: #240046;
+        }
+
+        /* Global Styling */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--color-bg-deep);
+            color: var(--color-text-light);
+            font-family: 'Dancing Script', cursive;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        /* Main Container: improved shadow and padding */
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background-color: var(--color-bg-card);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 10px var(--color-accent-orange);
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 900; /* Extra bold */
+            margin-bottom: 5px;
+            color: var(--color-accent-orange);
+        }
+        
+        .subtitle {
+            margin-bottom: 40px;
+            opacity: 0.85;
+            font-size: 1.15rem;
+            max-width: 90%;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: var(--color-text-light);
+            border-left: 5px solid var(--color-accent-orange);
+            padding-left: 15px;
+        }
+
+        /* Layout Grid */
+        .content-grid {
+            display: grid;
+            gap: 50px;
+        }
+
+        @media (min-width: 1024px) {
+            .content-grid {
+                grid-template-columns: 3fr 2fr; 
+            }
+        }
+
+        /* --- FORM STYLING --- */
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--color-accent-orange); /* Labels in orange for clarity */
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--color-form-field);
+            border: 2px solid var(--color-form-field); /* Thicker border base */
+            border-radius: 8px; 
+            color: var(--color-text-light);
+            transition: all 0.3s ease;
+            resize: vertical;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            min-height: 120px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--color-accent-orange); 
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 133, 0, 0.4);
+            background-color: var(--color-bg-deep);
+        }
+        
+        /* Submit Button: 3D press effect */
+        .submit-button {
+            width: 100%;
+            padding: 16px;
+            background-color: var(--color-accent-orange);
+            color: var(--color-text-dark);
+            font-weight: 800;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 5px 0 var(--color-bg-deep); /* 3D effect base */
+        }
+
+        .submit-button:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 7px 0 var(--color-bg-deep);
+        }
+        
+        .submit-button:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 var(--color-bg-deep);
+        }
+
+        .icon {
+            font-size: 1.5rem; 
+            line-height: 1;
+            color: var(--color-text-dark); /* Emoji color inside orange button */
+        }
+
+        /* --- LINKS STYLING --- */
+        .links-section {
+            padding: 30px;
+            background-color: var(--color-form-field); 
+            border-radius: 12px;
+            align-self: start;
+        }
+
+        .links-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .profile-links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--color-text-light);
+            background-color: var(--color-bg-deep); /* Use deep purple for links */
+            border: 1px solid var(--color-bg-card);
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: #4A1088; /* Slightly lighter purple on hover */
+            border-color: var(--color-accent-orange);
+            transform: translateX(5px); 
+        }
+        
+        .social-link .icon {
+            font-size: 1.75rem; /* Slightly larger emojis for links */
+            color: var(--color-accent-orange); /* Orange emoji color */
+            flex-shrink: 0;
+        }
+        
+        .link-text {
+            font-weight: 500;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            .subtitle {
+                max-width: 100%;
+            }
+            .social-link {
+                padding: 12px;
+            }
+        }
+    </style>
 </head>
  
   <body>
@@ -19,5 +226,69 @@
         <a href="contact_me.html" class="active">Contact</a>
       </nav>
       
-    </body>
-    </html>
+          <div class="container">
+          <h1>Connect with Meya</h1>
+          <p class="subtitle">I'd love to hear about your project or opportunity. Send a message, or connect with me via my professional profiles below.</p>
+  
+          <div class="content-grid">
+              
+              <!-- Contact Form Section -->
+              <div class="form-section">
+                  <h2>Send a Direct Message</h2>
+                  
+                  <form action="completion.html" method="POST">
+                      <div class="form-group">
+                          <label for="name">Your Name</label>
+                          <input type="text" id="name" name="name" required placeholder="Name or Company">
+                      </div>
+                      <br>
+                      <br>
+                      <div class="form-group">
+                          <label for="email">Email Address</label>
+                          <input type="email" id="email" name="email" required placeholder="contact@example.com">
+                      </div>
+                      <br>
+                      <div class="form-group">
+                          <label for="message">Your Message</label>
+                          <textarea id="message" name="message" required placeholder="I'm reaching out about..."></textarea>
+                      </div>
+                      <br>
+                      <br>
+                      <div>
+                          <button type="submit" class="submit-button">
+                              <span class="icon">&#9993;</span>
+                              <span>Send Inquiry</span>
+                          </button>
+                      </div>
+                  </form>
+              </div>
+  
+              <!-- Profile Links Section -->
+              <div class="links-section">
+                  <h2>Professional Links</h2>
+                  <div class="profile-links-container">
+                      
+                      <!-- LinkedIn Link -->
+                      <a href="https://www.linkedin.com/in/meya-middleton/" target="_blank" class="social-link">
+                          <span class="icon">&#128100;</span>
+                          <span class="link-text">LinkedIn Profile</span>
+                      </a>
+  
+                      <!-- GitHub Link -->
+                      <a href="https://github.com/mangosmeyaa" target="_blank" class="social-link">
+                          <span class="icon">&#128279;</span>
+                          <span class="link-text">GitHub Repositories</span>
+                      </a>
+  
+                      <!-- Resume Link -->
+                      <a href="https://docs.google.com/document/d/1Y69YtrwqpXRlZ7U7xQu3dqRnXZmFIkVEZwCNzN_QVUk/edit?usp=sharing" target="_blank" class="social-link">
+                          <span class="icon">&#128196;</span>
+                          <span class="link-text">View My Resume (Google Doc)</span>
+                      </a>
+  
+                  </div>
+              </div>
+          </div>
+</body>
+</html>
+   
